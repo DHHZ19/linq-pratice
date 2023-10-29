@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Beg+XHYM3ZJUkVQVZjgePoi9qDi4jpN6SOkS65Mp7PWC16IFe8d62NFCKwOnDSLl+gUOJv50xHqAn1C84t2tg==",
+  "dgSpecHash": "iy4hAYmfXrpAwczzPy9zbMMBGrsSpCPGKQT7miB46uRl1M+Gt9kdW/nLT9mtmSx4+IDNo8sGYaZhcYKi60KnKA==",
   "success": true,
-  "projectFilePath": "/Users/diegohernandez/Documents/Projects/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj",
+  "projectFilePath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

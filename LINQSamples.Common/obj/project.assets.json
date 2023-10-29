@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/diegohernandez/Documents/Projects/Linq/LINQSamples.Common/LINQSamples.Common.csproj",
+      "projectUniqueName": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.Common/LINQSamples.Common.csproj",
       "projectName": "LINQSamples.Common",
-      "projectPath": "/Users/diegohernandez/Documents/Projects/Linq/LINQSamples.Common/LINQSamples.Common.csproj",
+      "projectPath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.Common/LINQSamples.Common.csproj",
       "packagesPath": "/Users/diegohernandez/.nuget/packages/",
-      "outputPath": "/Users/diegohernandez/Documents/Projects/Linq/LINQSamples.Common/obj/",
+      "outputPath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.Common/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/diegohernandez/.nuget/NuGet/NuGet.Config"
@@ -51,8 +51,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/diegohernandez/Documents/Projects/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj": {
-              "projectPath": "/Users/diegohernandez/Documents/Projects/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj"
+            "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj": {
+              "projectPath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj"
             }
           }
         }

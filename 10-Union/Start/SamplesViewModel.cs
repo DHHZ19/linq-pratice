@@ -36,7 +36,7 @@
       List<int> list2 = new() { 1, 2, 3, 4, 5 };
 
       // Write Query Syntax Here
-     
+
 
       return list;
     }
@@ -57,7 +57,7 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-     
+
 
       return list;
     }
@@ -78,8 +78,7 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
-
+      list = list1.Union(list2, pc).OrderBy(x => x.Name).ToList();
       return list;
     }
     #endregion
@@ -97,7 +96,7 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      list = (from prod in list1 select prod).UnionBy(list2, prod => prod.Color).OrderBy(prod => prod.Name).ToList();
 
       return list;
     }
@@ -116,8 +115,8 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
 
+      list = list.UnionBy(list1, prod => prod.Color).OrderBy(prod => prod.Name).ToList();
       return list;
     }
     #endregion
@@ -136,7 +135,7 @@
       List<int> list2 = new() { 1, 2, 3, 4, 5 };
 
       // Write Query Syntax Here
-      
+      list = (from prod in list1 select prod).Concat(list2).ToList();
 
       return list;
     }
@@ -156,7 +155,7 @@
       List<int> list2 = new() { 1, 2, 3, 4, 5 };
 
       // Write Query Syntax Here
-      
+      list = list1.Concat(list2).ToList();
 
       return list;
     }
@@ -176,7 +175,7 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      list = (from prod in list1 select prod).Concat(list2).ToList();
 
       return list;
     }
@@ -196,7 +195,7 @@
       List<Product> list2 = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
+
 
       return list;
     }

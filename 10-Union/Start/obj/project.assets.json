@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "LINQSamples.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "LINQSamples.DataLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LINQSamples.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LINQSamples.Common.dll": {}
+        }
+      },
+      "LINQSamples.DataLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LINQSamples.DataLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LINQSamples.DataLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LINQSamples.Common/1.0.0": {
+      "type": "project",
+      "path": "../../LINQSamples.Common/LINQSamples.Common.csproj",
+      "msbuildProject": "../../LINQSamples.Common/LINQSamples.Common.csproj"
+    },
+    "LINQSamples.DataLayer/1.0.0": {
+      "type": "project",
+      "path": "../../LINQSamples.DataLayer/LINQSamples.DataLayer.csproj",
+      "msbuildProject": "../../LINQSamples.DataLayer/LINQSamples.DataLayer.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "LINQSamples.Common >= 1.0.0",
+      "LINQSamples.DataLayer >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/diegohernandez/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/10-Union/Start/LINQSamples.csproj",
+      "projectName": "LINQSamples",
+      "projectPath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/10-Union/Start/LINQSamples.csproj",
+      "packagesPath": "/Users/diegohernandez/.nuget/packages/",
+      "outputPath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/10-Union/Start/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/diegohernandez/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.Common/LINQSamples.Common.csproj": {
+              "projectPath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.Common/LINQSamples.Common.csproj"
+            },
+            "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj": {
+              "projectPath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

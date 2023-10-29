@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/diegohernandez/Documents/Projects/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj",
+      "projectUniqueName": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj",
       "projectName": "LINQSamples.DataLayer",
-      "projectPath": "/Users/diegohernandez/Documents/Projects/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj",
+      "projectPath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.DataLayer/LINQSamples.DataLayer.csproj",
       "packagesPath": "/Users/diegohernandez/.nuget/packages/",
-      "outputPath": "/Users/diegohernandez/Documents/Projects/Linq/LINQSamples.DataLayer/obj/",
+      "outputPath": "/Users/diegohernandez/Documents/Projects/codingPratice/Linq/LINQSamples.DataLayer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/diegohernandez/.nuget/NuGet/NuGet.Config"
