@@ -16,7 +16,18 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
+      (from prod in products
+       join sale in sales on prod.ProductID equals sale.ProductID
+       select new ProductOrder
+       {
+         ProductID = prod.ProductID,
+         Name = prod.Name,
+         Color = prod.Color,
+         StandardCost = prod.StandardCost,
+         ListPrice = prod.ListPrice
+       }
 
+      ).ToList();
 
       return list;
     }
@@ -36,7 +47,11 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Method Syntax Here
-
+      list = products.Join(sales, prod => prod.ProductID, sale => sale.ProductID, (prod, sale) => new ProductOrder
+      {
+        Name = prod.Name,
+        Color = prod.Color,
+      }).ToList();
 
       return list;
     }
@@ -96,8 +111,16 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-
-
+      list = (from prod in products
+              orderby prod.ProductID
+              join sale in sales
+              on prod.ProductID equals sale.ProductID
+              into newSales
+              select new ProductSales
+              {
+                Product = prod,
+                Sales = newSales.OrderBy(s => s.SalesOrderID).ToList()
+              }).ToList();
       return list;
     }
     #endregion
@@ -148,14 +171,18 @@
     /// </summary>
     public List<ProductOrder> LeftOuterJoinMethod()
     {
-      List<ProductOrder> list = null;
+      List<ProductSales> list = null;
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
       // Load all Sales Order Data
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Method Syntax Here
-
+      list = products.OrderBy(x => x.ProductID).GroupJoin(sales, prod => prod.ProductID, sale => sale.ProductID, (prod, newSales) => new ProductSales
+      {
+        Product = prod,
+        Sales = newSales.OrderBy(s => s.SalesOrderID).ToList()
+      }).ToList();
 
       return list;
     }
